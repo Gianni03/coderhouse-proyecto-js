@@ -27,8 +27,7 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- JavaScript -->
-    <script src="../js/entrevistas.js"></script>
+    
     <title>Focus On Kids | Terapia Ocupacional | Contacto</title>
 </head>
 
@@ -61,29 +60,29 @@
 
             <h1 data-aos="fade-down" data-aos-duration="1500" class="main__titulo">Focus On Kids</h1>
             
-            <!-- <form action="" method="post" class="formulario">
+            <form action="" method="post" class="formulario">
                 <fieldset class="formulario__contenedor contenedor">
-                    <legend class="formulario__titulo">Datos</legend>
+                    <legend class="formulario__titulo">Datos Del Niño</legend>
                     <label for="nombre">Nombre:
-                        <input class="contenedor__input" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input class="contenedor__input" type="text" name="nombre" id="nombre" placeholder="Nombre del niño">
                     </label>
-
-                    <label for="apellido">Apellido
-                        <input class="contenedor__input" type="text" name="apellido" id="apellido"
-                            placeholder="Apellido">
+                    <label for="nacimiento">Fecha de nacimiento
+                        <input class="contenedor__input" type="date" name="nacimiento" id="nacimineto">
                     </label>
-
-                    <label for="celular">Celular
-                        <input class="contenedor__input" type="tel" name="celular" id="celular"
-                            placeholder="N° celular">
+                    <label for="edad">Edad
+                        <input class="contenedor__input" type="number" name="edad" id="edad">
+                    </label>
+                    <label for="diagnostico">Diagnóstico
+                        <input class="contenedor__input" type="text" name="diagnostico" id="diagnostico">
+                    </label>
+                    <div>
+                        <label for="">Posee CUD</label>
                         <br>
-                        <caption class="contenedor__texto"> Código de área sin el 0 y número sin el 15</caption>
-                    </label>
-
-                    <label for="email">E-Mail
-                        <input class="contenedor__input" type="email" name="email" id="email" placeholder="E-mail">
-                    </label>
-
+                        <label for="cud">Si</label>
+                        <input class="contenedor__input--radio" type="radio" name="cud" id="cud-si">
+                        <label for="cud">No</label>
+                        <input class="contenedor__input--radio" type="radio" name="cud" id="cud-no">
+                    </div>
                     <label for="ciudad">Lugar de residencia:
                         <select class="contenedor__input" name="ciudad" id="ciudad">
                             <option value="comodoro">Comodoro Rivadavia</option>
@@ -93,16 +92,36 @@
                             <option value="otro">Otro</option>
                         </select>
                     </label>
+                    <legend class="formulario__titulo">Datos Para contacto <br> <small>Reserve una entrevista de 15'</small></legend>
+                    
+                    <label for="nombre-padre">Nombre:
+                        <input class="contenedor__input" type="text" name="nombre-padre" id="nombre-padre"
+                            placeholder="Ingrese  su nombre">
+                    </label>
+                    
+                    <label for="celular">Celular
+                        <input class="contenedor__input" type="tel" name="celular" id="celular"
+                            placeholder="N° celular">
+                        <br>
+                        <caption class="contenedor__texto">Código de área sin el 0 y número sin el 15</caption>
+                    </label>
 
-                    <label for="consulta">Mensaje</label>
-                    <textarea class="contenedor__input" name="consulta" id="consulta" cols="30" rows="10"
-                        placeholder="Escriba aquí su consulta...">
-                        </textarea>
+                    <label for="email">E-Mail
+                        <input class="contenedor__input" type="email" name="email" id="email" placeholder="E-mail">
+                    </label>
 
-                    <input class="contenedor__input contenedor__input--color" type="submit" value="Enviar">
+                    <label for="date">Fecha para la llamada
+                        <input class="contenedor__input" type="date" name="fecha-entrevista" id="fecha-entrevista">
+                    </label>
+
+                    
+
+                    
+
+                    <input class="contenedor__input contenedor__input--color btnEnviar" type="submit" id="btnEnviar" value="Enviar">
 
                 </fieldset>
-            </form> -->
+            </form>
 
             <!-- <form action="" method="post" class="formulario">
                 <fieldset class="formulario__contenedor contenedor">
@@ -167,7 +186,9 @@
                         <a href="https://docs.google.com/forms/d/1CAvpgoghqn912J67yNbs7SEeVPK-bZaeVlopjcukHzs/edit"
                             target="_blank">Historia del desarrollo</a>
                     </div>
+                </div>
             </div>
+
 
             <section class="map">
                 <iframe class="map__pc"
@@ -252,6 +273,11 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous">
     </script>
+    <!-- JavaScript -->
+    <!-- <script defer src="../js/entrevistas.js"></script> -->
+    <script defer src="../js/variables.js"></script>
+    <script defer src="../js/datos.js"></script>
+    <script defer src="../js/json.js"></script>
 </body>
 
 </html>
