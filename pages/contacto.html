@@ -64,13 +64,13 @@
                 <fieldset class="formulario__contenedor contenedor">
                     <legend class="formulario__titulo">Datos Del Niño</legend>
                     <label for="nombre">Nombre:
-                        <input class="contenedor__input" type="text" name="nombre" id="nombre" placeholder="Nombre del niño">
+                        <input class="contenedor__input" type="text" name="nombre" id="nombre" placeholder="Nombre del niño" required>
                     </label>
                     <label for="nacimiento">Fecha de nacimiento
-                        <input class="contenedor__input" type="date" name="nacimiento" id="nacimineto">
+                        <input class="contenedor__input" type="date" name="nacimiento" id="nacimineto" required>
                     </label>
                     <label for="edad">Edad
-                        <input class="contenedor__input" type="number" name="edad" id="edad">
+                        <input class="contenedor__input" type="number" name="edad" id="edad" required>
                     </label>
                     <label for="diagnostico">Diagnóstico
                         <input class="contenedor__input" type="text" name="diagnostico" id="diagnostico">
@@ -96,18 +96,18 @@
                     
                     <label for="nombre-padre">Nombre:
                         <input class="contenedor__input" type="text" name="nombre-padre" id="nombre-padre"
-                            placeholder="Ingrese  su nombre">
+                            placeholder="Ingrese  su nombre" required>
                     </label>
                     
                     <label for="celular">Celular
                         <input class="contenedor__input" type="tel" name="celular" id="celular"
-                            placeholder="N° celular">
+                            placeholder="N° celular" required>
                         <br>
                         <caption class="contenedor__texto">Código de área sin el 0 y número sin el 15</caption>
                     </label>
 
                     <label for="email">E-Mail
-                        <input class="contenedor__input" type="email" name="email" id="email" placeholder="E-mail">
+                        <input class="contenedor__input" type="email" name="email" id="email" placeholder="E-mail" required>
                     </label>
 
                     <label for="date">Fecha para la llamada
@@ -273,11 +273,14 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous">
     </script>
+    <!-- Sweet alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- JavaScript -->
     <!-- <script defer src="../js/entrevistas.js"></script> -->
     <script defer src="../js/variables.js"></script>
     <script defer src="../js/datos.js"></script>
     <script defer src="../js/json.js"></script>
+    <script defer src="../js/sweet.js"></script>
 </body>
 
 </html>

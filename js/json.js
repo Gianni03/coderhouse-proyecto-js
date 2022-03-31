@@ -7,7 +7,7 @@ const pacienteJSON = ()=> {
     datosPacienteJSON.residencia = residencia.value
     localStorage.setItem("datosPacienteJSON", JSON.stringify(datosDelFormPaciente))
 }
-btnGuardar.addEventListener("click", pacienteJSON)
+btnEnviar.addEventListener("click", pacienteJSON)
 
 const recuperoDatosPacienteJSON = ()=> {
     datosDelFormPaciente = JSON.parse(localStorage.getItem("datosDelFormPaciente"))
@@ -30,7 +30,7 @@ const contactoJSON = ()=> {
 }
 
 
-btnGuardar.addEventListener("click", contactoJSON)
+btnEnviar.addEventListener("click", contactoJSON)
 
 const recuperoDatosContactoJSON = ()=> {
     datosDelFormContacto = JSON.parse(localStorage.getItem("datosDelFormContacto"))
