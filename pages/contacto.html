@@ -19,6 +19,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400&family=Nanum+Gothic:wght@400;700;800&display=swap"
         rel="stylesheet">
+    <!-- MailJs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("5oa6efx9jWwsvS42j");
+        })();
+    </script>
     <!-- animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bootstrap -->
@@ -27,14 +34,14 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
-    
+
     <title>Focus On Kids | Terapia Ocupacional | Contacto</title>
 </head>
 
 <body>
     <div class="grid">
         <!-- * header y menu -->
-        
+
         <header class="header grid__header" id="top">
             <div class="header__logo-pc">
                 <a href="#">
@@ -49,7 +56,8 @@
                     <li data-aos="zoom-in-down" data-aos-duration="1000"><a href="acercaDe.html">Quienes Somos</a></li>
                     <li data-aos="zoom-in-down" data-aos-duration="1750"><a href="articulos.html">Artículos</a></li>
                     <li data-aos="zoom-in-down" data-aos-duration="2500"><a href="media.html">Galeria</a></li>
-                    <li data-aos="zoom-in-down" data-aos-duration="3000" class="inicio"><a href="../index.html">Inicio</a></li>
+                    <li data-aos="zoom-in-down" data-aos-duration="3000" class="inicio"><a
+                            href="../index.html">Inicio</a></li>
                 </ul>
             </nav>
         </header>
@@ -59,12 +67,13 @@
         <main class="main grid__main">
 
             <h1 data-aos="fade-down" data-aos-duration="1500" class="main__titulo">Focus On Kids</h1>
-            
-            <form action="" method="post" class="formulario">
+
+            <form action="https://api.emailjs.com/api/v1.0/email/send" method="post" class="formulario" id="formulario-mail">
                 <fieldset class="formulario__contenedor contenedor">
                     <legend class="formulario__titulo">Datos Del Niño</legend>
                     <label for="nombre">Nombre:
-                        <input class="contenedor__input" type="text" name="nombre" id="nombre" placeholder="Nombre del niño" required>
+                        <input class="contenedor__input" type="text" name="nombre" id="nombre"
+                            placeholder="Nombre del niño" required>
                     </label>
                     <label for="nacimiento">Fecha de nacimiento
                         <input class="contenedor__input" type="date" name="nacimiento" id="nacimineto" required>
@@ -92,33 +101,36 @@
                             <option value="otro">Otro</option>
                         </select>
                     </label>
-                    <legend class="formulario__titulo">Datos Para contacto <br> <small>Reserve una entrevista de 15'</small></legend>
-                    
+                    <legend class="formulario__titulo">Datos Para contacto <br> <small>Reserve una entrevista de
+                            15'</small></legend>
+
                     <label for="nombre-padre">Nombre:
                         <input class="contenedor__input" type="text" name="nombre-padre" id="nombre-padre"
                             placeholder="Ingrese  su nombre" required>
                     </label>
-                    
+
                     <label for="celular">Celular
-                        <input class="contenedor__input" type="tel" name="celular" id="celular"
-                            placeholder="N° celular" required>
+                        <input class="contenedor__input" type="tel" name="celular" id="celular" placeholder="N° celular"
+                            required>
                         <br>
                         <caption class="contenedor__texto">Código de área sin el 0 y número sin el 15</caption>
                     </label>
 
                     <label for="email">E-Mail
-                        <input class="contenedor__input" type="email" name="email" id="email" placeholder="E-mail" required>
+                        <input class="contenedor__input" type="email" name="email" id="email" placeholder="E-mail"
+                            required>
                     </label>
 
                     <label for="date">Fecha para la llamada
                         <input class="contenedor__input" type="date" name="fecha-entrevista" id="fecha-entrevista">
                     </label>
 
-                    
 
-                    
 
-                    <input class="contenedor__input contenedor__input--color btnEnviar" type="submit" id="btnEnviar" value="Enviar">
+
+
+                    <input class="contenedor__input contenedor__input--color btnEnviar" type="submit" id="btnEnviar"
+                        value="Enviar">
 
                 </fieldset>
             </form>
@@ -270,9 +282,8 @@
     </script>
     <!-- bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
     <!-- Sweet alert 2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- JavaScript -->
@@ -281,6 +292,7 @@
     <script defer src="../js/datos.js"></script>
     <script defer src="../js/json.js"></script>
     <script defer src="../js/sweet.js"></script>
+    
 </body>
 
 </html>
